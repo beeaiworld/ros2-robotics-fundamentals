@@ -16,9 +16,24 @@ This repository is designed to help newcomers get started with ROS2 (Robot Opera
 6. [Resources](#resources)
 
 ## Installation Guide
-
-[Provide instructions or link to instructions for installing ROS2]
-
+# Installing ROS 2 (Humble)
+## Docker Installation
+### Prerequisites
+1. Install Docker Desktop
+   ```bash
+   # For macOS: Download from https://www.docker.com/products/docker-desktop
+### Using ROS 2 with Docker and VNC
+1. Pull the ROS 2 Desktop VNC image:
+   ```bash
+   docker pull tiryoh/ros2-desktop-vnc:humble
+   ```
+2. Run the container:
+   ```bash
+   docker run -p 6080:80 --shm-size=512m tiryoh/ros2-desktop-vnc:humble
+   ```
+3. Access the desktop environment:
+   - Open your web browser
+   - Go to: http://localhost:6080
 ## ROS2 Basics
 
 [Brief overview of ROS2 concepts like nodes, topics, services, etc.]
